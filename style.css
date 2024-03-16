@@ -1,6 +1,38 @@
-body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+@media print {
+    .pagebreak {
+        clear: both;
+        page-break-after: always;
+    }
+
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+        font-size: 11px;
+        padding: 10px;
+    }
 }
+
+:target {
+    background-color: #9f9;
+    transition: ease-in 0.25s;
+    
+ }
+
+ body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+    padding: 100px;
+}
+
+li a {
+    text-decoration: none;
+    background-color: rgba(200,200,200,0.5);
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    
+}
+
+
 
 .title-page {
     display: flex;
@@ -18,16 +50,20 @@ body {
 
 ol { 
     counter-reset: item;
+    offset-position: 1em;
+    padding-left: 10px;
     
  }
 
 li {
     list-style-position: outside;
+    line-height: 2em;
+    font-size: normal;
+    font-weight: normal;
 }
 
 ol>li { display: table; margin-bottom: 0.4em;}
-ol>li:before { content: counters(item, ".") " "; counter-increment: item;display: table-cell; padding-right:1em;}
+ol>li:before { content: attr(data-number); counter-increment: item;display: table-cell; padding-right:10px;}
 
-section>ol>li {font-size: larger;}
-section>ol>ol>li {font-size: large;}
+
 
