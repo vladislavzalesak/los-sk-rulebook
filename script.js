@@ -3,6 +3,7 @@ var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
 function GenerateContentTable(target)
 {
     var targetSection = $(target);
+
 }
 
 function GetLabel(alpha, number,prefix)
@@ -36,9 +37,21 @@ function generateLinkText()
     var targets = [...document.querySelectorAll('li[id]')];
 
     links.forEach(element => {
-        var target = document.querySelector('li[id="'+element.getAttribute('href').slice(1)+'"]');
-        if(target != null)
+        var attributeValue = element.getAttribute('href')
+        var target = document.querySelector('li[id="'+attributeValue.slice(1)+'"]');
+        if(target != null) {
             element.textContent = target.getAttribute('data-number');
+            console.log('bbb');
+            element.onmouseover =  function(e)  {
+                var hover = document.getElementById(attributeValue.slice(1));
+                hover.classList.add('target');
+           };
+
+           element.onmouseout =  function(e)  {
+            var hover = document.getElementById(attributeValue.slice(1));
+            hover.classList.remove('target');
+       };
+        }
     });
 
 }

@@ -9,13 +9,28 @@
         font-size: 11px;
         padding: 10px;
     }
+
+    li a {
+        background-color: transparent;
+        padding:0px !important;
+        border-radius: 0px;
+        font-weight: bold;
+        border: none !important;
+    }
+
+
 }
 
 :target {
     background-color: #9f9;
-    transition: ease-in 0.25s;
     
  }
+
+ .target {
+    background-color: #9f9;
+ }
+
+
 
  body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
@@ -23,13 +38,33 @@
 }
 
 li a {
-    text-decoration: none;
-    background-color: rgba(200,200,200,0.5);
+    text-decoration: none; 
+    background-color: rgba(100,100,100,0.1);
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 2px;
     border-radius: 10px;
     font-weight: bold;
+    border:1px solid grey;
+}
+
+li a:hover {
+  
+    background-color: rgba(100,100,100,0.2);
+    font-weight: bolder;
+    border:1px solid black;
+    box-shadow: 0 0 1px 1px grey;
+}
+
+a:visited {
+    text-decoration-color: black;
+    color:black;
     
+}
+
+a:link {
+    text-decoration-color: black;
+    color:black;
 }
 
 
@@ -62,8 +97,10 @@ li {
     font-weight: normal;
 }
 
-ol>li { display: table; margin-bottom: 0.4em;}
+ol>li { display: table; margin-bottom: 0.4em; transition: ease-in 0.25s;}
 ol>li:before { content: attr(data-number); counter-increment: item;display: table-cell; padding-right:10px;}
+ol>li span { font-size: large; font-weight: bold;}
+ol>li span:before { font-size: large; font-weight: bold;}
 
 
 
