@@ -37,22 +37,19 @@ function GetLabel(alpha, number,prefix)
         var value = (prefix == '') ? number++ : prefix+'.'+(number++);
         return  value;
     }}
-
-function generateNumbering(element, prefix) {
+function generateNumbering(element, prefix,number) {
     if(element.tagName.toLowerCase() == 'section'.toLowerCase())
         var scope = ':scope > article';
-    else if(element.tagName.toLowerCase() == 'article'.toLowerCase())
-        var scope = ':scope > ol > li';
     else if(element.tagName.toLowerCase() == 'ol'.toLowerCase())
         var scope = ':scope > li';
     var items =  [...element.querySelectorAll(scope)];
     var alpha = element.classList.contains('letter');
-    var number = 0;
     var value = prefix;
+    var last = 0;
     items.forEach(li => {
-        number++;
-        if(element.tagName.toLowerCase() != 'section')
+        if(!(element.tagName.toLowerCase() == 'section'.toLowerCase()))
         {
+            number++;
             value = GetLabel(alpha,number,prefix);
             var valueToSet = value + (prefix=='' ?  '.' : '');
             li.setAttribute('data-number', valueToSet );
@@ -60,24 +57,25 @@ function generateNumbering(element, prefix) {
         }
         var sublists = [...li.querySelectorAll(':scope > ol')];
         sublists.forEach(ol => {
-            generateNumbering(ol, value);
+            last = generateNumbering(ol, value,last);
         });
     });
-};
+    if(prefix == '' )
+        return number;
+    else
+        return 0;
+}
 
 function generateLinkText()
 {
     var links = [...document.querySelectorAll('a[href^="#"]')];
 
     links.forEach(element => {
-        console.log(element);
         var attributeValue = element.getAttribute('href')
         var target = document.querySelector('li[rule-tag="'+attributeValue.slice(1)+'"]');
         if(target != null) {
-            console.log(target.id);
             element.href='#'+target.id;
             element.textContent = target.getAttribute('data-number');
-            console.log(element);
             element.onmouseover =  function(e)  {
                 var hover = document.getElementById(target.id);
                 hover.classList.add('target');
@@ -96,7 +94,7 @@ function generateLinkText()
 
 $(document).ready(function()   {
     var initialElement = $('section#root')[0];
-    generateNumbering(initialElement,'');
+    generateNumbering(initialElement,'',0);
     generateLinkText();
     GenerateContentTable('#content-table',initialElement);
 });
