@@ -17,14 +17,14 @@
         <section class="title-page pagebreak">
             <img alt="LOS-SK logo" class="logo" src="logo.png">
             <h1>Pravidlá obrannej streľby LOS-SK</h1>
-            <h2>(Liga obrannej streľby - Slovensko)</h2>
+            <h1>(Liga obrannej streľby - Slovensko)</h1>
             <h3>Technické zabezpečenie a pravidlá streľby</h3>
-            <h3>Platné od 1. 5. 2024</h3>
+            <h3>Platné od 1.5.2024</h3>
         </section>
         <section class="content-table pagebreak">
             <h1>Obsah</h1>
-            <ol id="content-table">
-            </ol>
+            <article id="content-table">
+            </article>
         </section>
         <section class="pagebreak">
             <h1>Úvod</h1>
@@ -39,34 +39,38 @@
                 súvisiacimi zákonnými normami. Pravidlá sa môžu meniť v súvislosti so zmenami príslušnej legislatívy,
                 technickým pokrokom v oblasti výstroja a výzbroje a skúsenosťami, ktoré sa na pretekoch ukázali ako
                 prínosné.</p>
-            <p>Viac o LOS-SK nájdete na www.los-sk.sk.</p>
+            <p>Viac o LOS-SK nájdete na <a class="ref-to-page" href="http://www.los-sk.sk">stránke</a>.</p>
         </section>
-        <section>
-            <h1>Časť 1<br>Definície, technické požiadavky na výzbroj a výstroj</h1>
-            <ol id="root">
-                <li><span>DEFINÍCIA ZBRANÍ</span>
+        <section id="root">
+            <article><h1>Časť 1<br>Definície, technické požiadavky na výzbroj a výstroj</h1>
+            <ol>
+                <li><span class="header">Definícia zbraní</span>
                     <ol>
-                        <li><span>Krátka zbraň</span>
+                        <li><span class="header2">Krátka zbraň</span>
                             <ol>
-                                <li>Pištoľ (Pi) - pištoľ kalibru 7,62 mm Tokarev a 9mm a viac. Zbraň musí byť nositeľná
+                                <li rule-tag="firearm-definition-pistol">Pištoľ (Pi) - pištoľ kalibru 7,62 mm Tokarev a 9mm a viac. Zbraň musí byť nositeľná
                                     skryte a jej úpravy nesmú toto základné kritérium znemožňovať.</li>
-                                <li>Malá pištoľ (MPi) - pištoľ do kalibru 7,65 mm vrátane, okrem kalibru 7,62 mm
+                                <li  rule-tag="firearm-definition-small-pistol">Malá pištoľ (MPi) - pištoľ do kalibru 7,65 mm vrátane, okrem kalibru 7,62 mm
                                     Tokarev. Zbraň musí byť nositeľná skryte a jej úpravy nesmú toto základné kritérium
                                     znemožňovať.</li>
-                                <li>Revolver (Re) - päť a viacranový revolver kalibru .22 WMR a .38 a viac vrátane
+                                <li rule-tag="firearm-definition-revolver">Revolver (Re) - päť a viacranový revolver kalibru .22 WMR a .38 a viac vrátane
                                     porovnateľných kalibrov. Zbraň musí byť nositeľná skryte a jej úpravy nesmú toto
                                     základné kritérium znemožňovať.</li>
-                                <li>Malý revolver (MRe) - päť a viacranový revolver kalibru .22 LR a viac, avšak nie
+                                <li  rule-tag="firearm-definition-small-revolver">Malý revolver (MRe) - päť a viacranový revolver kalibru .22 LR a viac, avšak nie
                                     viac ako .38 vrátane a porovnateľné kalibre. Zbraň musí byť nositeľná skryte a jej
                                     úpravy nesmú toto základné kritérium znemožňovať.</li>
-                                <li>Optik (OPT) - krátka zbraň uvedená v 1.1.1 - 1.1.4 a zároveň vybavená optickým alebo
+                                <li  rule-tag="firearm-definition-optic">Optik (OPT) - krátka z   braň uvedená v <a href="#firearm-definition-pistol"></a>,
+                                    <a href="#firearm-definition-small-pistol"></a>,
+                                    <a href="#firearm-definition-revolver"></a> alebo 
+                                    <a href="#firearm-definition-small-revolver"></a>
+                                      a zároveň vybavená optickým alebo
                                     optoelektronickým zameriavacím zariadením (napríklad kolimátor) pevne spojeným so
                                     záverom alebo rámom/telom zbrane, alebo vybavená k zbrani pripevneným laserovým
                                     zameriavacím zariadením, ktoré je aktivované kedykoľvek medzi štartovacím signálom a
                                     posledným výstrelom</li>
                             </ol>
                         </li>
-                        <li><span>Dlhá zbraň</span>
+                        <li><span class="header2">Dlhá zbraň</span>
                             <ol>
                                 <li>Brokovnica samonabíjacia - brokovnica s automatickým systémom prebíjania; do tejto
                                     kategórie sú zaradené všetky poloautomatické brokovnice, umožňujúce 3 a viac
@@ -88,7 +92,7 @@
                                     je sklopná, musí byť vyklopená.</li>
                             </ol>
                         </li>
-                        <li><span>Povolené úpravy zbrane</span>
+                        <li><span class="header2">Povolené úpravy zbrane</span>
                             <ol>
                                 <li>Úpravy zbrane smerujúce k jej vyššej spoľahlivosti, funkčnosti alebo k zvýšeniu
                                     životnosti zbrane sú povolené, napr. výmena mieridiel rovnakej alebo podobnej
@@ -111,7 +115,7 @@
                                 </li>
                             </ol>
                         </li>
-                        <li><span>Zakázané úpravy zbraní</span>
+                        <li><span class="header2">Zakázané úpravy zbraní</span>
                             <ol>
                                 <li>Zakázanými úpravami krátkych zbraní je použitie puškohľadov, dioptrov s výnimkou
                                     jednoduchých mechanických dioptrov, anatomických terčových pažbičiek so spodnou
@@ -128,9 +132,9 @@
                         </li>
                     </ol>
                 </li>
-                <li><span>VÝSTROJ A DOPLNKY</span>
+                <li><span class="header">Výstroj a doplnky</span>
                     <ol>
-                        <li><span>Puzdrá pre krátku zbraň</span>
+                        <li><span class="header2">Puzdrá pre krátku zbraň</span>
                             <ol>
                                 <li>Puzdrá a nosiče musia byť určené pre skryté nosenie zbrane a výstroja a spĺňať
                                     podmienky týchto pravidiel.</li>
@@ -153,7 +157,7 @@
                                     nespĺňajúce pravidlo 2.1.2., 2.1.4. a 2.1.5. sú zakázané.</li>
                             </ol>
                         </li>
-                        <li><span>Zásobníky a nosiče zásobníkov pre krátku zbraň</span>
+                        <li><span class="header2">Zásobníky a nosiče zásobníkov pre krátku zbraň</span>
                             <ol>
                                 <li>Pretekár smie u pištole (Pi) a malej pištole (MPi) použiť na riešenie situácie ako
                                     prvý výhradne zásobník dodávaný štandardne k zbrani jej výrobcom. Pre zvýšenie jeho
@@ -166,7 +170,7 @@
                                     väčšia ako pozdĺžna hrúbka zásobníka.</li>
                             </ol>
                         </li>
-                        <li><span>Test výstroja</span>
+                        <li><span class="header2">Test výstroja</span>
                             <ol>
                                 <li>Ak je pochybnosť o bezpečnosti výstroja, je pretekár povinný na pokyn hlavného
                                     rozhodcu vykonať skúšku bezpečnosti. Tá sa vykonáva opakovaným zoskokom (min.
@@ -179,7 +183,7 @@
                                     ak je pochybnosť o dodržaní predpísaných pravidiel 2.1. a 2.2.</li>
                             </ol>
                         </li>
-                        <li><span>Doplnky pre dlhú zbraň</span>
+                        <li><span class="header2">Doplnky pre dlhú zbraň</span>
                             <ol>
                                 <li>Ak nie je v popise situácie uvedené inak, smú byť počas riešenia situácie náboje iba
                                     v zbrani, v nosičoch alebo v zásobníkoch, resp. vo vreckách bežného odevu. Maximálne
@@ -188,9 +192,9 @@
                                     bežného odevu.</li>
                             </ol>
                         </li>
-                        <li><span>Skryté nosenie</span>
+                        <li><span class="header2">Skryté nosenie</span>
                             <ol>
-                                <li id="concealed-carry-rule">Ak nie je v popise situácie uvedené inak, vyžaduje sa pri
+                                <li rule-tag="concealed-carry-rule">Ak nie je v popise situácie uvedené inak, vyžaduje sa pri
                                     vstupe strelca do situácie
                                     skryté nosenie krátkej zbrane a príslušenstva (zásobníky, rýchlonabíjače) a to až po
                                     signál na zahájenie jej
@@ -199,7 +203,7 @@
                                     odevom, ktorý je primeraný k aktuálnym klimatickým podmienkam. Obrys zbrane v
                                     puzdre, príslušenstva ani puzdra
                                     samotného, nesmú byť viditeľné cez odev.</li>
-                                <li id="equipment-check-rule">V prípade akýchkoľvek pochybností o dodržaní pravidla <a
+                                <li rule-tag="equipment-check-rule">V prípade akýchkoľvek pochybností o dodržaní pravidla <a
                                         href="#concealed-carry-rule"></a>
                                     sa vykoná skúška tak, že pretekár v stoji predpaží (zdvihne natiahnuté ruky do výšky
                                     ramien pred seba) a žiadna časť
@@ -214,7 +218,7 @@
                                     dlhú zbraň.</li>
                             </ol>
                         </li>
-                        <li><span>Tlmič</span>
+                        <li><span class="header2">Tlmič</span>
                             <ol>
                                 <li>Ak nie je v popise alebo propozíciach preteku uvedené inak, tlmiče sú povolené za
                                     predpokladu, že budú splnené podmienky pre jednotlivéjednotlive situácie preteku.
@@ -223,9 +227,9 @@
                         </li>
                     </ol>
                 </li>
-                <li><span>STRELIVO</span>
+                <li><span class="header">Strelivo</span>
                     <ol>
-                        <li><span>Strelivo pre krátku zbraň</span>
+                        <li><span class="header2">Strelivo pre krátku zbraň</span>
                             <ol>
                                 <li>V rámci LOS-SK je povolené používať iba strelivo - jednotný náboj s jednotnou
                                     strelou, povolené platnou právnou úpravou pre daný druh zbrane.</li>
@@ -233,7 +237,7 @@
                                     povinný oznámiť vopred v propozíciách preteku.</li>
                             </ol>
                         </li>
-                        <li><span>Strelivo pre dlhú zbraň</span>
+                        <li><span class="header2">Strelivo pre dlhú zbraň</span>
                             <ol>
                                 <li>V rámci LOS je povolené používať iba strelivo povolené platnou právnou úpravou pre
                                     daný druh zbrane. Nie je povolené
@@ -259,7 +263,7 @@
                         </li>
                     </ol>
                 </li>
-                <li><span>ROZHODOVACIE PRÁVOMOCI</span>
+                <li><span class="header">Rozhodovacie právomoci</span>
                     <ol>
                         <li>V prípade pochybností alebo nejasností o povolení použitia zbraní, výstroja a doplnkov v
                             preteku rozhoduje hlavný
@@ -273,8 +277,10 @@
                             uvedené v pravidlách alebo
                             v propozíciách, rozhodne s konečnou platnosťou hlavný rozhodca.</li>
                     </ol>
-                </li>
-                <li><span>REGISTRÁCIA</span><ol>
+                </li></ol>
+                </article><article><h1>Časť 2<br>Pravidlá a priebeh pretekov</h1>
+                <ol>
+                <li><span class="header">Registrácia</span><ol>
                         <li>Pri registrácii je každý pretekár na vyzvanie povereného rozhodcu povinný predložiť na
                             posúdenie vybitú zbraň, s ktorou bude pretekať, platný zbrojný preukaz a doklady k
                             predloženej zbrani. Okrem uvedeného je pretekár poverenému rozhodcovi povinný predviesť
@@ -289,7 +295,7 @@
                             vylúčiť z preteku.</li>
                     </ol>
                 </li>
-                <li><span>ÚČASŤ VO VIACERÝCH DIVÍZIÁCH</span><ol>
+                <li><span class="header">Účasť vo viacerých divíziách</span><ol>
                         <li>Pretekár nesmie v jednej divízii nosiť alebo používať viac zbraní bez toho, aby to bolo
                             špecificky určené v propozíciách preteku alebo v popise situácie.</li>
                         <li>Ak pretekár strieľa dvomi zbraňami v dvoch divíziách, je povinný nahlásiť, ktorú z nich chce
@@ -301,7 +307,7 @@
                             divíziachdivíziách bez obmedzenia a v ľubovoľnom poradí.</li>
                     </ol>
                 </li>
-                <li><span>PRIPRAVENOSŤ PRETEKÁRA</span><ol>
+                <li><span class="header">Pripravenosť pretekára</span><ol>
                         <li>Pred začiatkom riešenia situácie je rozhodca povinný sa uistiť, že pretekár rozumie spôsobu
                             riešenia situácie. Pýta sa: „Rozumieš situácii?“ („Do you understand the course of fire?“)
                             Ak pretekár odpovie „NIE“ („No“), vysvetlí mu situáciu znovu. Ďalej je pretekár povinný
@@ -316,7 +322,7 @@
                         sluchu v ochrannej polohe.</li>
                     </ol>
                 </li>
-                <li> PRIPRAVENOSŤ ZBRANE<ol>
+                <li><span class="header">Pripravenosť zbrane</span><ol>
                         <li>Pretekár musí začínať na streleckom stanovisku so zbraňou v pozícii pripravenosti k streľbe
                             zodpovedajúcej jej vlastnostiam.</li>
                         <li>Ak propozície alebo popis situácie nestanovia pripravenosť zbrane, rozhodca žiadnym spôsobom
@@ -367,7 +373,6 @@
                                     ozub.
                                 </li>
                             </ol>
-                
                         </li>
                         <li>Termínom „poistka“ sa označuje primárny viditeľný ovládací prvok na manuálne zaistenie
                             zbrane. V prípade pochybností rozhoduje v tejto veci s konečnou platnosťou hlavný rozhodca.
@@ -385,7 +390,7 @@
                             pozície pripravenosti pre rovnaké typy zbraní.</li>
                     </ol>
                 </li>
-                <li> BEZPEČNÝ STAV ZBRANE<ol>
+                <li><span class="header">Bezpečný stav zbrane</span><ol>
                         <li> Za bezpečný stav krátkej zbrane sa považuje stav, ak je zbraň vybitá, bez zasunutého
                             zásobníka, s vypusteným kohútom, resp. bez predopnutia spúšťového mechanizmu u zbraní typu
                             „Safe Action“; pri revolveri sú všetky komory valca prázdne, valec zatvorený a zbraň je
@@ -404,14 +409,14 @@
                             diskvalifikáciu pretekára.</li>
                     </ol>
                 </li>
-                <li> NABITÁ ZBRAŇ<ol>
+                <li><span class="header">Nabitá zbraň</span><ol>
                         <li>
                             Zbraň je považovaná za nabitú, ak je do nej zasunutý zásobník alebo je valec revolveru
                             nabitý a
                             zaklopený alebo ak je v zbrani akýmkoľvek spôsobom zasunutý náboj.</li>
                     </ol>
                 </li>
-                <li> NÁHRADNÁ ZBRAŇ<ol>
+                <li><span class="header">Náhradná zbraň</span><ol>
                         <li>V jednom preteku smie pretekár v jednej divízii použiť iba zbraň predloženú pri registrácii.
                         </li>
                         <li>Výnimočne môže kvôli poruche zbrane, po predchádzajúcom schválení hlavným rozhodcom, použiť
@@ -420,7 +425,7 @@
                             zakázaná.</li>
                     </ol>
                 </li>
-                <li> KRYTIE <ol>
+                <li><span class="header">Krytie</span><ol>
                         <li>Na pretekoch LOS-SK je pretekár povinný strieľať vždy s krytím, ak nie je určené v popise
                             situácie inak. </li>
                         <li>Typy krytia<ol class="letter">
@@ -478,7 +483,7 @@
                             povinnosť krytia inak. Vždy však musí túto úpravu uviesť v popise situácie.</li>
                     </ol>
                 </li>
-                <li> BEZPEČNÁ ZÓNA<ol>
+                <li><span class="header">Bezpečná zóna</span><ol>
                         <li>Za účelom nácviku manipulácie so zbraňou, kontroly stavu zbrane alebo jej čistenia a opravy
                             môže pretekár v priebehu preteku manipulovať so zbraňou bez povelu rozhodcu iba na mieste
                             vopred určenom, označenom ako bezpečná zóna (safety area). </li>
@@ -487,7 +492,7 @@
                             pretekára podľa pravidla 30.1. písm. f).</li>
                     </ol>
                 </li>
-                <li> PRST MIMO SPÚŠTE<ol>
+                <li><span class="header">Prst mimo spúšte</span><ol>
                         <li>Počas tasenia, nabíjania, prebíjania, vybíjania, odstraňovania závady, ukladania zbrane do
                             puzdra a počas pohybu (okrem krytia streľbou) a pri opravovaní poruchy musí byť prst zjavne
                             mimo spúšť a lúčik.</li>
@@ -496,7 +501,7 @@
                         <li>Za opakované previnenie je pretekár potrestaný diskvalifikáciou z preteku.</li>
                     </ol>
                 </li>
-                <li> POVELY A ČINNOSŤ PRETEKÁRA<ol>
+                <li><span class="header">Povely a činnosť pretekára</span><ol>
                         <li>Akúkoľvek manipuláciu so zbraňou môže pretekár na situácii, mimo jej riešenia, vykonávať
                             výhradne na povel alebo signál rozhodcu. Svojvoľná manipulácia so zbraňou pred vydaním
                             povelu alebo signálu bez ohľadu na jej dôvod je prísne zakázaná a považuje sa za nebezpečnú
@@ -504,7 +509,8 @@
                         <li>Povely a popis povolenej činnosti pretekára sú uvedené v Prílohe A.</li>
                     </ol>
                 </li>
-                <li>STRELECKÉ SITUÁCIE<ol>
+                </ol></article><article><h1>Časť 3<br>Príprava a riešenie streleckej situácie</h1><ol>
+                <li><span class="header">Strelecké situácie</span><ol>
                         <li>Situácie na pretekoch LOS-SK by mali v zásade vždy vychádzať z reálnych sebaobranných
                             situácií so zbraňou.</li>
                         <li>Každá situácia musí mať písomný popis, ktorý musí obsahovať minimálne tieto informácie:
@@ -532,7 +538,7 @@
                             posledného výstrelu pred uplynutím časového limitu.</li>
                     </ol>
                 </li>
-                <li>BEZPEČNÉ UHLY<ol>
+                <li><span class="header">Bezpečné uhly</span><ol>
                         <li>Na situácii musia byť jasne stanovené bezpečné uhly. S bezpečnými uhlami musí byť pretekár
                             vždy zoznámený a to pri oboznámení sa so situáciou, najneskôr však pred začiatkom riešenia
                             situácie.</li>
@@ -541,7 +547,7 @@
                         </li>
                     </ol>
                 </li>
-                <li>KALIBRÁCIA<ol>
+                <li><span class="header">Kalibrácia</span><ol>
                         <li>Pre účely kalibrácie sa v propozíciách preteku určuje kalibračná zbraň, ktorá musí byť počas
                             preteku na strelnici.</li>
                         <li>Hlavný rozhodca musí zaistiť kalibráciu všetkých terčov PP pred zahájením preteku alebo
@@ -565,7 +571,7 @@
                         </li>
                     </ol>
                 </li>
-                <li>KRYT, STENA<ol>
+                <li><span class="header">Kryt, stena</span><ol>
                         <li>Kryt je určený na krytie pretekára pred terčom, na ktorý strieľa, stena slúži na vizuálne
                             skrytie terčov pred pohľadom pretekára. </li>
                         <li>Kryt ako aj stena sú všeobecne chápané ako nepriestrelné a nepriehľadné prekážky. Ak strela
@@ -577,7 +583,7 @@
                             33.1. písm. g).</li>
                     </ol>
                 </li>
-                <li>PREBÍJANIE ZBRANE, ODSTRAŇOVANIE ZÁVADY PORUCHY<ol>
+                <li><span class="header">Prebíjanie zbrane, odstraňovanie závady poruchy</span><ol>
                         <li>Ak je pretekár nútený počas riešenia situácie dobiť, resp. prebiť zbraň alebo odstrániť
                             poruchu, môže tak urobiť nasledujúcimi spôsobmi:<ol>
                                 <li>ak je v kryte, prebije alebo odstráni poruchu v kryte a opúšťa ho so streľbyschopnou
@@ -605,7 +611,7 @@
                             nesmie ho nechať na mieste prebíjania. V tomto prípade sa neuplatňuje pravidlo 20.3.</li>
                     </ol>
                 </li>
-                <li>PORUCHA ZBRANE A STRELIVA<ol>
+                <li><span class="header">Porucha zbrane a streliva</span><ol>
                         <li>Ak zbraň nemôže byť nabitá alebo vybitá kvôli poruche, musí to pretekár oznámiť rozhodcovi.
                             Ten rozhodne o ďalšom spôsobe riešenia poruchy, vždy však tak, aby nedošlo k ohrozeniu iných
                             osôbto neohrozilo ostatných pretekárov ani divákov.</li>
@@ -613,21 +619,21 @@
                             nerozhodne inak.</li>
                     </ol>
                 </li>
-                <li>NÁCVIK SITUÁCIE<ol>
+                <li><span class="header">Nácvik situácie</span><ol>
                         <li>Do streleckej situácie nesmie za účelom nácviku situácie nikto vstúpiť ani sa v nej
                             pohybovať bez osobitného povolenia rozhodcu na situácii alebo hlavného rozhodcu.</li>
                         <li>Porušenie pravidla 22.1. sa považuje za nešportové správanie a pokus o podvod a má za
                             následok diskvalifikáciu podľa pravidla 38.1. písm. b).</li>
                     </ol>
                 </li>
-                <li>ÚPRAVA SITUÁCIE<ol>
+                <li><span class="header">Úprava situácie</span><ol>
                         <li>Pretekár si nesmie žiadnym spôsobom svojvoľne upravovať situáciu.</li>
                         <li>Ak nie je pretekár pre svoje telesné dispozície schopný riešiť situáciu, smie požiadať
                             rozhodcu na situácii o výnimku. Rozhodnutie rozhodcu je výhradne na jeho uvážení a je
                             konečné.</li>
                     </ol>
                 </li>
-                <li>PRERUŠENIE RIEŠENIA SITUÁCIE<ol>
+                <li><span class="header">Prerušenie riešenia situácie</span><ol>
                         <li>Ak nastane situácia, ktorá ohrozuje pretekára, rozhodcu alebo divákov, príp. bráni
                             pretekárovi v ďalšom riešení situácie, rozhodca okamžite zastaví streľbu zvolaním "STOP".
                         </li>
@@ -642,7 +648,7 @@
                             situácii, príp. hlavný rozhodca. Jeho rozhodnutie je konečné.</li>
                     </ol>
                 </li>
-                <li>PRERUŠENIE PRETEKU, NESCHOPNOSŤ DOKONČIŤ SITUÁCIU<ol>
+                <li><span class="header">Prerušenie preteku, neschopnosť dokončiť situáciu</span><ol>
                         <li>Strelec smie prerušiť pretek pred ďalším štartovým signálom, ale žiadnu už absolvovanú
                             streleckú situáciu nemôže znovu opakovať. Výnimku tvoria závažné dôvody na práve
                             prebiehajúcej alebo ukončenej situácii, pre ktoré rozhodca posúdi, že strelec smie situáciu
@@ -651,7 +657,7 @@
                             nezasiahnutý.</li>
                     </ol>
                 </li>
-                <li>ROZHODCA<ol>
+                <li><span class="header">Rozhodca</span><ol>
                         <li>Pri príprave preteku zabezpečí usporiadateľ na každú situáciu spravidla dvoch rozhodcov na
                             situácii.</li>
                         <li>Rozhodca o svojom umiestnení na situácii rozhoduje sám. Musí však byť také, aby neohrozilo
@@ -664,7 +670,7 @@
                             situácie.</li>
                     </ol>
                 </li>
-                <li>DIVÁCI<ol>
+                <li><span class="header">Diváci</span><ol>
                         <li>Diváci nesmú žiadnym spôsobom rušiť strelca na situácii pri streľbe alebo pri príprave na
                             ňu. Hlavný rozhodca má v prípade porušenia tejto povinnosti právo ich zo situácie vykázať.
                         </li>
@@ -677,11 +683,12 @@
                             rozhodca preteku má v prípade porušenia tejto povinnosti právo ich vykázať.</li>
                     </ol>
                 </li>
-                <li>SÚLAD PROPOZÍCIÍ S PRAVIDLAMI <ol>
+                <li><span class="header">Súlad propozícií s pravidlami</span><ol>
                         <li>Propozície preteku musia byť bezvýhradne v súlade s týmito pravidlami.</li>
                     </ol>
                 </li>
-                <li>VÝSTREL Z NEDBANLIVOSTI<ol>
+                </ol></article><article><h1>Časť 4<br>Porušenie pravidiel, penalizácie </h1><ol>
+                <li><span class="header">Výstrel z nedbanlivosti</span><ol>
                         <li>Výstrelom z nedbanlivosti sa rozumie:<ol>
                                 <li>výstrel, ktorý vyjde inokedy a iným smerom, ako je predpísané v pravidlách alebo v
                                     propozíciách (napr. v puzdre),</li>
@@ -699,7 +706,7 @@
                             následne diskvalifikovaný podľa pravidla 33.1. písm. c).</li>
                     </ol>
                 </li>
-                <li>NEBEZPEČNÁ MANIPULÁCIA<ol>
+                <li><span class="header">Nebezpečná manipulácia</span><ol>
                         <li>Za nebezpečnú manipuláciu sa považuje najmä:<ol>
                                 <li>výstrel z nedbanlivosti podľa pravidla 29,</li>
                                 <li>manipulácia so zbraňou na situácii bez povelu rozhodcu na situácii,</li>
@@ -718,7 +725,7 @@
                         </li>
                     </ol>
                 </li>
-                <li>NEŠPORTOVÉ SPRÁVANIE<ol>
+                <li><span class="header">Nešportové správanie</span><ol>
                         <li>Nešportovým správaním sa rozumie akékoľvek konanie pretekára, ktorým by mohol získať
                             neoprávnenú výhodu voči ostatným pretekárom, má za následok diskvalifikáciu z preteku, napr.
                             <ul>
@@ -736,7 +743,7 @@
                             úmyselné porušenie alebo napriek napomenutiu opakované porušovanie týchto pravidiel.</li>
                     </ol>
                 </li>
-                <li>PENALIZÁCIA<ol>
+                <li><span class="header">Penalizácia</span><ol>
                         <li>Pre účely hodnotenia výsledkov na situácii sa použijú tieto kritériá:<ol>
                                 <li>zásah terča v zóne A (alfa) je hodnotený
                                     ................................................................... + 0 sek.,</li>
@@ -769,7 +776,7 @@
                             pripočítanie 3 sekúnd k dosiahnutému času.</li>
                     </ol>
                 </li>
-                <li>DISKVALIFIKÁCIA<ol>
+                <li><span class="header">Diskvalifikácia</span><ol>
                         <li>Diskvalifikácia sa použije, ak sa pretekár dopustí týchto porušení pravidiel:<ol>
                                 <li>podvod alebo pokus o podvod použitím nepredvedenej zbrane,</li>
                                 <li>nácvik situácie v situácii,</li>
@@ -786,11 +793,10 @@
                         <li>Diskvalifikovaný pretekár má v danom preteku zákaz nastúpiť na akúkoľvek ďalšiu situáciu vo
                             svojej a v akejkoľvek inej divízii.</li>
                         <li>Diskvalifikovaný pretekár nemá nárok na hodnotenie a vrátenie štartovného.</li>
-
-
                     </ol>
                 </li>
-                <li>TERČE A HODNOTENIE<ol>
+                </ol></article><article><h1>Časť 5<br>Hodnotenie pretekára</h1><ol>
+                <li><span class="header">Terče a hodnotenie</span><ol>
                         <li>Terče<ol>
                                 <li>Pri preteku smie každá situácia obsahovať maximálne dvanásť (12) terčov, počet
                                     neterčov nie je obmedzený.</li>
@@ -848,7 +854,7 @@
                             nepriestrelné, vždy to však musí oznámiť pri oboznámení pretekárov so situáciou.</li>
                     </ol>
                 </li>
-                <li>ZÁZNAM VÝSLEDKU STRELCA NA SITUÁCII<ol>
+                <li><span class="header">Záznam výsledku strelca na situácii</span><ol>
                         <li>Výsledok, ktorý dosiahol pretekár na situácii, zaznamená určený rozhodca do hodnotiaceho
                             hárku, uvedeného v prílohe C alebo do elektronickej aplikácie.</li>
                         <li>Pretekár je povinný po ukončení hodnotenia situácie skontrolovať záznam v hodnotiacom hárku
@@ -860,7 +866,7 @@
                         </li>
                     </ol>
                 </li>
-                <li>NEROZHODNÝ VÝSLEDOK<ol>
+                <li><span class="header">Nerozhodný výsledok</span><ol>
                         <li>Ak je potrebné odstrániť nerozhodný výsledok, sú dotknutí pretekári povinní absolvovať jednu
                             alebo viac situácií, stanovených alebo vytvorených hlavným rozhodcom, kým nie je určený
                             víťaz.</li>
@@ -869,7 +875,7 @@
                         <li>Nerozhodný výsledok nesmie byť odstránený náhodnou voľbou.</li>
                     </ol>
                 </li>
-                <li>PROTESTY<ol>
+                <li><span class="header">Protesty</span><ol>
                         <li>Protesty ohľadom vyhodnotenia výsledkov na každej situácii rieši na mieste rozhodca.</li>
                         <li>Nesúhlas pretekára s vyhodnotením situácie rieši hlavný rozhodca. Jeho rozhodnutie je
                             konečné.</li>
@@ -880,7 +886,8 @@
                             hlavný rozhodca. Na protesty podané neskôr sa neberie ohľad.</li>
                     </ol>
                 </li>
-                <li>DIVÍZIE A KATEGÓRIE<ol>
+                </ol></article><article><h1>Časť 6<br>Organizácia a hodnotenie pretekov</h1><ol>
+                <li><span class="header">Divízie a kategórie</span><ol>
                         38.1. Krátka zbraň
                         <li>Pretekári súťažia podľa používanej zbrane v príslušnej divízií - pištoľ, malá pištoľ,
                             revolver, malý revolver.</li>
@@ -925,7 +932,7 @@
                         </ol></li>
                     </ol>
                 </li>
-                <li>SÚŤAŽ DRUŽSTIEV<ol>
+                <li><span class="header">Súťaž družstiev</span><ol>
                         <li>Na všetkých pretekoch LOS-SK vrátane MSR môže usporiadateľ podľa uváženia vyhlásiť aj Súťaž
                             družstiev. Spôsob ich organizácie a hodnotenia musí byť presne stanovený v propozíciách
                             preteku.</li>
@@ -933,7 +940,7 @@
                             pretekoch ani na kvalifikáciu na MSR LOS-SK.</li>
                     </ol>
                 </li>
-                <li>CELKOVÉ HODNOTENIE PRETEKU<ol>
+                <li><span class="header">Celkové hodnotenie preteku</span><ol>
                         <li>Aby bolo dosiahnuté vzájomnej porovnateľnosti všetkých konaných pretekov, je hodnotenie
                             vykonané na každej situácii jediným systémom - penalizáciou, ktorá sa pripočítava ku
                             konečnému času, ktorý pretekár dosiahol. Tým sa získa celkový čas situácie (ďalej jen
@@ -949,7 +956,7 @@
                             koeficientom.</li>
                     </ol>
                 </li>
-                <li>ORGANIZÁCIA SÚŤAŽÍ<ol>
+                <li><span class="header">Organizácia súťaží</span><ol>
                         <li>V rámci LOS-SK sa organizujú tieto súťaže: Klubová súťaž LOS-SK, Pohár LOS-SK a Majstrovstvá
                             SR LOS-SK (MSR).</li>
                         <li>Organizácia súťaže je v kompetencii usporiadateľa, organizácia MSR je plne v kompetencii
@@ -973,7 +980,7 @@
 
                         <li>Pohár LOS-SK sa skladá zo všetkých pohárových pretekov LOS-SK usporiadaných v danom ročníku.
                             Priebežné a konečné poradie Poháru LOS-SK počíta Asociácia LOS-SK na základe zaslaných
-                            výsledkov pohárových pretekov LOS-SK a uverejňuje ich na www.los-sk.sk.</li>
+                            výsledkov pohárových pretekov LOS-SK a uverejňuje ich na <a class="ref-to-page" href="http://www.los-sk.sk">stránke</a>.</li>
                         <li>Poradie jednotlivých pretekárov sa určí porovnaním súčtu (celkových percent z preteku) z
                             najlepších výsledkov. Počet najlepších počítaných výsledkov je určený vzorcom (celkový počet
                             pohárových pretekov uskutočnených v danom ročníku / 3) zaokrúhlené matematicky na jednotky.
@@ -992,7 +999,7 @@
                     každej divízii. Kritéria pre kvalifikáciu budú zverejnené</li>
                 </ol>
             </li>
-                <li>KLASIFIKÁCIA<ol>
+                <li><span class="header">Klasifikácia</span><ol>
                         <li>
                         Každý pohárový pretek je považovaný za klasifikačný. Podľa dosiahnutého výsledku je pretekárovi
                         priznaná výkonnostná trieda, platná v aktuálnom ročníku, kedy ju dosiahol.
@@ -1006,14 +1013,14 @@
                         </li>
                     </ol>
                 </li>
-                <li>CENY A VÝSLEDKY PRETEKU<ol>
+                <li><span class="header">Ceny a výsledky preteku</span><ol>
                         <li>Udelenie cien v rámci každého preteku je na uvážení usporiadateľa. Ceny môžu byť vecné alebo
                             symbolické (medaile, diplomy, odznaky atďatd.).</li>
                         <li>Výsledky preteku musia byť vždy vyhotovené najneskôr na konci preteku. Nie je prípustné, aby
                             sa pretekár dozvedel o svojom výkone s neprimeraným oneskorením.</li>
                     </ol>
                 </li>
-                <li>ŠTANDARDNÉ CVIČENIE - LOSík<ol>
+                <li><span class="header">Štandardné cvičenie - losík</span><ol>
                         <li>Štandardné cvičenie je súbor vždy rovnakých, reprodukovateľných situácií a streleckých
                             postupov, ktoré slúžia na overenie streleckých zručností pretekárov bez ohľadu na zbrane a
                             vybavenie, ktoré používajú. Štandardné cvičenie je možné strieľať vo viacerých divíziách
@@ -1021,16 +1028,17 @@
                     </ol>
                 </li>
             </ol>
-        </section>
-        <section id="appendix">
+        </article>
+        <article class="appendixes"><h1>Časť 7<br>Prílohy</h1>
                 <article id="commands"></article>
                 <article id="target"></article>
                 <article id="paper-scoresheet"></article>
                 <article id="losik"></article>
+        </article>
         </section>
     </div>
 
-<footer>Page:</footer>
+<footer><span id="page-counter">Page:</span></footer>
 
 </body>
 

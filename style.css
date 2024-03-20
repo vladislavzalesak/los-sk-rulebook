@@ -28,6 +28,15 @@
       {
         content: "x" counter('footer');
       }
+
+      .ref-to-page {
+        visibility:collapse;        
+      }
+
+      .ref-to-page::before {
+        content: "www.los-sk.sk";
+        visibility: visible;
+      }
     
 
 
@@ -45,12 +54,36 @@
 
 
  body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; 
     padding: 100px;
     
 }
 
-li a {
+#content-table ol
+{
+    list-style-position: outside;
+}
+
+#content-table li {
+    line-height: 1.25em;
+    
+}
+
+#content-table li a {
+    padding-left: 10px;
+    padding-top: 2px;
+    padding-right: 10px;
+    padding-bottom: 1px;
+}
+
+#content-table li a:hover {
+    background-color: rgba(100,100,100,0.2);
+    font-weight: bolder;
+    
+    
+}
+
+#root li a {
     text-decoration: none; 
     background-color: rgba(100,100,100,0.1);
     padding-left: 10px;
@@ -61,7 +94,7 @@ li a {
     border:1px solid grey;
 }
 
-li a:hover {
+#root li a:hover {
   
     background-color: rgba(100,100,100,0.2);
     font-weight: bolder;
@@ -80,7 +113,9 @@ a:link {
     color:black;
 }
 
-
+section {
+    margin-top:50px;
+}
 
 .title-page {
     display: flex;
@@ -89,11 +124,38 @@ a:link {
     justify-items: center;
     align-items: center;
     width:100%;
-    padding-top: 200px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    
+}
+
+.article > h1 
+{
+    padding-bottom:20px;    
+}
+
+.title-page h1:last-of-type
+{
+    padding:0px;
+    margin:0px;
+    padding-bottom:50px;    
+}
+
+.title-page .logo
+{
+    padding:0px;
+    margin:0px;
+    padding-bottom:50px;
+}
+
+.title-page h2,h3
+{
+    margin:5px;
+    padding:0px
 }
 
 .title-page .logo {
-    max-width:25%;    
+    max-width:40%;    
 }
 
 ol { 
@@ -101,7 +163,6 @@ ol {
     padding-left: 0px;
     margin-left: 0px;
     display:block;
-
  }
 
 li {
@@ -111,11 +172,24 @@ li {
     padding-left:0px;
 }
 
-ol>li {  counter-increment: item; display: inline-block; margin-bottom: 0.4em; transition: ease-in 0.25s; margin-left:10px;}
+ol>li { display: block; margin-bottom: 0.4em; transition: ease-in 0.25s; margin-left:10px;}
 ol>li:before { content: attr(data-number); padding-right:10px; }
+#page-counter::before { counter-increment: page; content:counter(page)}
 
 
+li>span {
+    font-size:1.75em;
+    
+}
 
+
+li>ol>li>span.header {
+    font-size:1.5em;
+}
+
+ol>li>ol>li>ol>li>span.header {
+    font-size:1.25em;
+}
 
 
 
