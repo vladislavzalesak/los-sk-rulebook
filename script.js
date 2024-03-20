@@ -3,12 +3,13 @@ var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
 function GenerateContentTable(target,initialElement)
 {
     var targetSection = $(target)[0];
-    var articles = [...document.querySelectorAll("#root > article")];
+    var articles = [...document.querySelectorAll("#root article")];
     articles.forEach((article) => {
             var title = article.querySelector(':scope > h1');
             var contentTitle = document.createElement('h3');
             var list = document.createElement('ol');
-            title.querySelector(':scope > br').replaceWith(' - ')
+            if(title.querySelector(':scope > br'))
+                title.querySelector(':scope > br').replaceWith(' - ')
             contentTitle.innerText = title.innerText;
             var elements = [...article.querySelectorAll(":scope li>span.header")];
             elements.forEach(item => {

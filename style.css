@@ -54,7 +54,7 @@
 
 
  body {
-    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 12px; font-style: normal; font-variant: normal; 
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 12px;  font-variant: normal; 
     padding: 100px;
     
 }
@@ -191,7 +191,47 @@ ol>li>ol>li>ol>li>span.header {
     font-size:1.25em;
 }
 
+.command-table
+{
+    table-layout: fixed;
+    margin:10px;
+    border-collapse: collapse;
+}
+
+.command-table .command-table-head
+{
+    background-color: rgba(192,192,192,1);
+    font-size: 1.5em;
+}
+
+.command-table * 
+{
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.command-table tr:nth-child(2n+1) td
+{
+    text-align: center;
+    font-weight: bold;
+    background-color: rgba(192,192,192,0.5);
+
+}
+
+.command-table tr:nth-child(even)
+{
+    text-align: center;
+}
+
+.command-table td {
+    width:50%
+}
 
 
-
-
+img {
+    display: block;
+  width: auto;
+  height: auto;
+  max-width:600px;
+  max-height: 600px;
+}
