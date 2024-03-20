@@ -40,7 +40,7 @@ function GetLabel(alpha, number,prefix)
 
 function generateNumbering(element, prefix) {
     if(element.tagName.toLowerCase() == 'section'.toLowerCase())
-        var scope = ':scope > article'; 
+        var scope = ':scope > article';
     else if(element.tagName.toLowerCase() == 'article'.toLowerCase())
         var scope = ':scope > ol > li';
     else if(element.tagName.toLowerCase() == 'ol'.toLowerCase())
@@ -48,12 +48,16 @@ function generateNumbering(element, prefix) {
     var items =  [...element.querySelectorAll(scope)];
     var alpha = element.classList.contains('letter');
     var number = 0;
+    var value = prefix;
     items.forEach(li => {
         number++;
-        var value = GetLabel(alpha,number,prefix);
-        var valueToSet = value + (prefix=='' ?  '.' : '');
-        li.setAttribute('data-number', valueToSet );
-        li.setAttribute('id',`anchor-${valueToSet}`);
+        if(element.tagName.toLowerCase() != 'section')
+        {
+            value = GetLabel(alpha,number,prefix);
+            var valueToSet = value + (prefix=='' ?  '.' : '');
+            li.setAttribute('data-number', valueToSet );
+            li.setAttribute('id',`anchor-${valueToSet}`);
+        }
         var sublists = [...li.querySelectorAll(':scope > ol')];
         sublists.forEach(ol => {
             generateNumbering(ol, value);
