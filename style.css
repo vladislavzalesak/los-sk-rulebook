@@ -37,6 +37,9 @@
         content: "www.los-sk.sk";
         visibility: visible;
       }
+
+      #page-counter {display:block;}
+      #page-counter::before { counter-increment: page; content:counter(page)}
     
 
 
@@ -56,6 +59,8 @@
  body {
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 12px;  font-variant: normal; 
     padding: 100px;
+    counter-reset:page;
+    
     
 }
 
@@ -92,6 +97,7 @@
     border-radius: 10px;
     font-weight: bold;
     border:1px solid grey;
+    white-space: nowrap;
 }
 
 #root li a:hover {
@@ -165,7 +171,8 @@ ol {
     display:block;
  }
 
-li {
+
+ ol  li {
     line-height: 32px;
     font-weight: normal;
     margin-left:0px;
@@ -174,7 +181,7 @@ li {
 
 ol>li { display: block; margin-bottom: 0.4em; transition: ease-in 0.25s; margin-left:10px;}
 ol>li:before { content: attr(data-number); padding-right:10px; }
-#page-counter::before { counter-increment: page; content:counter(page)}
+
 
 
 li>span {
@@ -234,4 +241,70 @@ img {
   height: auto;
   max-width:600px;
   max-height: 600px;
+}
+
+table.scoresheet-description 
+{
+    table-layout: fixed;
+    margin:10px;
+    border-collapse: collapse;    
+}
+
+table.scoresheet-description td
+{
+    border: 1px solid black;
+    padding:2px;
+}
+
+table.scoresheet-description tr:nth-child(odd)
+{
+    background-color: silver;
+}
+
+table.scoresheet-description tr > td:first-child
+{
+    padding-right: 5em;    
+}
+
+table.table-losik 
+{
+    table-layout: fixed;
+    margin:10px;
+    border-collapse: collapse;    
+}
+
+table.table-losik ul
+{
+    list-style-type: "- ";
+    list-style-position: inside;
+    margin:0px;
+    padding:0px;
+    line-height: 1em;
+}
+
+table.table-losik td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+table.table-losik tr
+{
+    
+    vertical-align: top;
+}
+
+table.table-losik tr.tr-head
+{
+    background-color: silver;
+    font-weight: bold;
+}
+
+#page-counter
+{
+    display:none;
+}
+
+article.appendixes article 
+{
+    page-break-after: always;   
 }
