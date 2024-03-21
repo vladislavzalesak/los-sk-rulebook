@@ -88,7 +88,7 @@
     
 }
 
-#root li a {
+#root a {
     text-decoration: none; 
     background-color: rgba(100,100,100,0.1);
     padding-left: 10px;
@@ -100,8 +100,7 @@
     white-space: nowrap;
 }
 
-#root li a:hover {
-  
+#root a:hover {
     background-color: rgba(100,100,100,0.2);
     font-weight: bolder;
     border:1px solid black;
