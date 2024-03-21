@@ -3,12 +3,13 @@ var alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
 function GenerateContentTable(target,initialElement)
 {
     var targetSection = $(target)[0];
-    var articles = [...document.querySelectorAll("#root > article")];
+    var articles = [...document.querySelectorAll("#root article")];
     articles.forEach((article) => {
             var title = article.querySelector(':scope > h1');
             var contentTitle = document.createElement('h3');
             var list = document.createElement('ol');
-            title.querySelector(':scope > br').replaceWith(' - ')
+            if(title.querySelector(':scope > br'))
+                title.querySelector(':scope > br').replaceWith(' - ')
             contentTitle.innerText = title.innerText;
             var elements = [...article.querySelectorAll(":scope li>span.header")];
             elements.forEach(item => {
@@ -37,6 +38,9 @@ function GetLabel(alpha, number,prefix)
         var value = (prefix == '') ? number++ : prefix+'.'+(number++);
         return  value;
     }}
+
+
+
 function generateNumbering(element, prefix,number) {
     if(element.tagName.toLowerCase() == 'section'.toLowerCase())
         var scope = ':scope > article';
@@ -52,8 +56,9 @@ function generateNumbering(element, prefix,number) {
             number++;
             value = GetLabel(alpha,number,prefix);
             var valueToSet = value + (prefix=='' ?  '.' : '');
+            var anchorToSet = (alpha ? prefix : '') + value +  (prefix=='' ?  '.' : '');
             li.setAttribute('data-number', valueToSet );
-            li.setAttribute('id',`anchor-${valueToSet}`);
+            li.setAttribute('id',`anchor-${anchorToSet}`);
         }
         var sublists = [...li.querySelectorAll(':scope > ol')];
         sublists.forEach(ol => {
@@ -76,6 +81,11 @@ function generateLinkText()
         if(target != null) {
             element.href='#'+target.id;
             element.textContent = target.getAttribute('data-number');
+            if(target.parentElement.classList.contains("letter"))
+            {
+                console.log(target.parentElement.parentElement.getAttribute('data-number'))
+                element.textContent = target.parentElement.parentElement.getAttribute('data-number') +' '+ element.textContent
+            }
             element.onmouseover =  function(e)  {
                 var hover = document.getElementById(target.id);
                 hover.classList.add('target');
