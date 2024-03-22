@@ -73,10 +73,10 @@ function generateNumbering(element, prefix,number) {
 
 function generateLinkText()
 {
-    var links = [...document.querySelectorAll('a[href^="#"]')];
+    var links = [...document.querySelectorAll('a[rule-tag]')];
 
     links.forEach(element => {
-        var attributeValue = element.getAttribute('href')
+        var attributeValue = element.getAttribute('rule-tag')
         var target = document.querySelector('li[rule-tag="'+attributeValue.slice(1)+'"]');
         if(target != null) {
             element.href='#'+target.id;
